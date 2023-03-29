@@ -1,0 +1,24 @@
+{
+	"title": "keys Order empty fail case.",
+	"input": {
+		"WHERE": {
+			"GT": {
+				"sections_avg": 97
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_dept",
+				"sections_avg",
+				"sections_title"
+			],
+			"ORDER": {
+				"dir": "UP",
+				"keys": [
+				]
+			}
+		}
+	},
+	"errorExpected": true,
+    "expected": "InsightError"
+}

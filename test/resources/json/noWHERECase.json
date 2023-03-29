@@ -1,0 +1,14 @@
+{
+	"title": "fail case - WHERE portion does not exist",
+	"input": {
+		"OPTIONS": {
+			"COLUMNS": [
+				"courses_dept",
+				"courses_avg"
+			],
+			"ORDER": "courses_avg"
+		}
+	},
+	"errorExpected": true,
+	"expected": "InsightError"
+}

@@ -1,0 +1,50 @@
+{
+	"title": "sections ORDER DOWN",
+	"input": {
+		"WHERE": {
+			"AND": [
+				{
+					"IS": {
+						"sections_title": "*"
+					}
+				},
+				{
+					"LT": {
+						"sections_avg": 90
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_title",
+				"sections_avg"
+			],
+			"ORDER": {
+				"dir": "DOWN",
+				"keys": [
+					"sections_avg"
+				]
+			}
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+		{
+			"sections_title": "OSBO",
+			"sections_avg": 442
+		},
+		{
+			"sections_title": "HEBB",
+			"sections_avg": 375
+		},
+		{
+			"sections_title": "LSC",
+			"sections_avg": 350
+		},
+		{
+			"sections_title": "LSC",
+			"sections_avg": 350
+		}
+	]
+}

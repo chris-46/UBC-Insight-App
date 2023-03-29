@@ -1,0 +1,46 @@
+{
+	"title": "Sections Transformation",
+	"input": {
+		"WHERE": {},
+
+		"OPTIONS": {
+
+			"COLUMNS": ["sections_title", "sections_uuid","overallAvg"]
+
+		},
+
+		"TRANSFORMATIONS": {
+
+			"GROUP": ["sections_avg"],
+
+			"APPLY": [{
+
+				"overallAvg": {
+
+					"AVG": "sections_avg"
+
+				}
+
+			}]
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+		{
+			"rooms_shortname": "LSC",
+			"rooms_seats": 350
+		},
+		{
+			"rooms_shortname": "LSC",
+			"rooms_seats": 350
+		},
+		{
+			"rooms_shortname": "HEBB",
+			"rooms_seats": 375
+		},
+		{
+			"rooms_shortname": "OSBO",
+			"rooms_seats": 442
+		}
+	]
+}

@@ -1,0 +1,14 @@
+{
+	"title": "fail case - no OPTIONS case",
+	"input": {
+		"WHERE": {
+			"GT": {
+				"courses_avg": 97
+			}
+		},
+		"OPTIONS": {
+		}
+	},
+	"errorExpected": true,
+	"expected": "InsightError"
+}
